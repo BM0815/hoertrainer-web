@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hörtrainer CI</title>
+<meta name="description" content="Hörtrainer CI – ein Übungsprogramm für Menschen mit Cochlea-Implantat. Alle Daten bleiben auf dem Gerät.">
+<style>
+  :root {
+    --hintergrund: #f7f6f2;
+    --flaeche: #ffffff;
+    --text: #1f2328;
+    --leise: #5a6170;
+    --akzent: #2f6f6a;
+    --linie: #e2e0d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --hintergrund: #16181b;
+      --flaeche: #1f2226;
+      --text: #ecebe6;
+      --leise: #a7adb8;
+      --akzent: #7cc4bc;
+      --linie: #31353b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--hintergrund);
+    color: var(--text);
+    font: 18px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 10px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 1.2em; margin: 0 0 10px; }
+  .unterzeile { color: var(--leise); font-size: 1.1rem; margin-bottom: 28px; }
+  .kasten {
+    background: var(--flaeche);
+    border: 1px solid var(--linie);
+    border-left: 4px solid var(--akzent);
+    border-radius: 10px;
+    padding: 16px 20px;
+  }
+  a { color: var(--akzent); }
+  nav { margin-top: 20px; font-size: 1rem; }
+  nav a { margin-right: 18px; }
+  footer {
+    margin-top: 56px; padding-top: 16px;
+    border-top: 1px solid var(--linie);
+    color: var(--leise); font-size: 0.95rem;
+  }
+  .platzhalter { background: #fff3c4; color: #5c4400; padding: 0 4px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Hörtrainer CI</h1>
+  <p class="unterzeile">Ein Übungsprogramm für Menschen mit Cochlea-Implantat – für Android.</p>
+
+  <p>Hörtrainer CI ist von einem CI-Träger entwickelt worden, für die Zeit zwischen den
+  Terminen, in der man allein weiterüben möchte: ein paar Minuten am Tag, im eigenen Tempo.</p>
+
+  <nav>
+    <a href="#ueben">Was man übt</a>
+    <a href="#datenschutz">Datenschutz</a>
+    <a href="#impressum">Impressum</a>
+  </nav>
+
+  <h2 id="ueben">Was man damit übt</h2>
+  <ul>
+    <li>Wörter, Zahlen und Sätze verstehen – mit Antworten zum Antippen oder Nachsprechen</li>
+    <li>Ähnlich klingende Laute unterscheiden, etwa <em>mein / nein</em> oder <em>Kamm / kann</em></li>
+    <li>Alltagsgeräusche erkennen und mit Hintergrundgeräuschen üben</li>
+    <li>Geschichten anhören und Fragen dazu beantworten</li>
+    <li>Mit eigenen Aufnahmen üben – zum Beispiel mit der Stimme von Familie oder Logopädin</li>
+  </ul>
+
+  <div class="kasten">
+    <p><strong>Übungsprogramm, kein Medizinprodukt.</strong> Hörtrainer CI ersetzt weder die
+    logopädische Therapie noch die Anpassung des Sprachprozessors. Bei Fragen zum Hören
+    wenden Sie sich an Ihr CI-Zentrum oder Ihre Logopädin.</p>
+  </div>
+
+  <h2 id="datenschutz">Datenschutz</h2>
+  <p><strong>Die App erhebt keine personenbezogenen Daten, überträgt keine Daten und gibt
+  keine weiter.</strong> Es gibt kein Konto und keinen Server. Die App hat keine Berechtigung
+  für den Internetzugriff – das lässt sich in den App-Informationen des Geräts nachprüfen.</p>
+  <ul>
+    <li><strong>Auf dem Gerät</strong> entstehen Übungsergebnisse, Einstellungen, ein freiwilliges
+    Hörprofil sowie Wortlisten, Aufnahmen und Bilder, die Sie selbst anlegen. Sie verlassen das
+    Gerät nur, wenn Sie selbst einen Bericht oder eine Sicherung weitergeben.</li>
+    <li><strong>Mikrofon:</strong> für eigene Aufnahmen und für das Nachsprechen. Die
+    Spracherkennung stellt das Android-System bereit; je nach Geräteeinstellung kann das System
+    dabei Sprachdaten an den Gerätehersteller oder an Google senden. Wer das nicht möchte, antwortet
+    per Antippen.</li>
+    <li><strong>Benachrichtigungen:</strong> nur für die tägliche Erinnerung ans Üben, wenn Sie sie
+    einschalten.</li>
+    <li><strong>Löschen:</strong> Alle Daten verschwinden mit der Deinstallation oder über
+    Einstellungen → Apps → Hörtrainer CI → Speicher → Daten löschen.</li>
+  </ul>
+  <p><strong>Diese Webseite</strong> setzt keine Cookies, enthält keine Statistik- oder
+  Werbedienste und lädt nichts von fremden Servern. Beim Aufruf verarbeitet der Hoster
+  IONOS technisch notwendige Zugriffsdaten wie
+  die IP-Adresse in Server-Protokollen.</p>
+  <p>Verantwortlich und Kontakt für Fragen zum Datenschutz: siehe Impressum.</p>
+
+  <h2 id="impressum">Impressum</h2>
+  <p>Angaben gemäß § 5 DDG</p>
+  <p>
+    Bernd Misbach</p>
+    Gemeindefeld 6</p>
+    63808 Haibach</p>
+    bernd.misbach@outlook.de</p>
+  </p>
+
+  <footer>
+    Stand: 10.11.2026 · Hörtrainer CI
+  </footer>
+
+</main>
+</body>
+</html>
